@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #F7F4EF;
+    color: #121212;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #F7F4EF;
+    color: #121212;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  ::selection {
+    background-color: #EDE6DA;
+    color: #121212;
+  }
+}
+
+/* ==========================================================================
+   EDITORIAL & WARM DESIGN SYSTEM TOKENS
+   ========================================================================== */
+
+.font-display {
+  font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Ambient Environment Background: Warm Editorial Ivory Canvas */
+.ambient-environment {
+  background-color: #F7F4EF;
+  background-image: 
+    radial-gradient(circle at 50% -10%, rgba(237, 230, 218, 0.7), transparent 70%),
+    radial-gradient(circle at 10% 40%, rgba(229, 195, 120, 0.06), transparent 50%),
+    radial-gradient(circle at 90% 70%, rgba(111, 127, 95, 0.05), transparent 55%),
+    radial-gradient(circle at 50% 110%, rgba(200, 90, 62, 0.04), transparent 60%);
+  background-attachment: fixed;
+}
+
+/* Floating Elevated Editorial Canvas */
+.floating-canvas-surface {
+  background: #F7F4EF;
+  border: 1px solid #EDE6DA;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.04);
+}
+
+/* Subtle Film Grain Noise Texture */
+.film-grain {
+  background-image: radial-gradient(rgba(18, 18, 18, 0.03) 1px, transparent 0);
+  background-size: 32px 32px;
+}
+
+/* Fine-line precision grid */
+.precision-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(18, 18, 18, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(18, 18, 18, 0.02) 1px, transparent 1px);
+}
+
+/* Massive Typographic Scales */
+.hero-display-numeral {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(3.5rem, 9vw, 8rem);
+  line-height: 0.85;
+  letter-spacing: -0.06em;
+  font-weight: 800;
+}
+
+.hero-display-title {
+  font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(2.8rem, 6.5vw, 6.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.monumental-number {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(2.8rem, 7vw, 7rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+.telemetry-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* Fluid Keyframe Animations */
+@keyframes pulseGlowSoft {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(0.99);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.01);
+  }
+}
+
+@keyframes flowDash {
+  0% {
+    stroke-dashoffset: 160;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes floatSmooth {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-glow-pulse {
+  animation: pulseGlowSoft 5s ease-in-out infinite;
+}
+
+.animate-flow-dash {
+  stroke-dasharray: 8 16;
+  animation: flowDash 2.4s linear infinite;
+}
+
+.animate-float-smooth {
+  animation: floatSmooth 7s ease-in-out infinite;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 360ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Sleek Editorial Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F4EF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8D0C3;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8B0A2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

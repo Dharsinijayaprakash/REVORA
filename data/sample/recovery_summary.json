@@ -1,0 +1,21 @@
+{
+    "total_at_risk_transactions": 2026,
+    "total_revenue_at_risk": 51042090.0,
+    "total_expected_recovery": 23513519.199999977,
+    "action_counts": {
+        "PAYMENT_REMINDER": 1016,
+        "RECEIVABLES_ESCALATION": 192,
+        "HUMAN_APPROVAL": 504,
+        "SMART_RETRY": 256,
+        "MANDATE_RETRY": 58
+    },
+    "expected_recovery_by_action": {
+        "PAYMENT_REMINDER": 9421750.750000026,
+        "RECEIVABLES_ESCALATION": 2398270.0,
+        "HUMAN_APPROVAL": 6309452.0,
+        "SMART_RETRY": 4696994.7,
+        "MANDATE_RETRY": 687051.75
+    },
+    "human_approval_count": 504,
+    "stopped_count": 0
+}

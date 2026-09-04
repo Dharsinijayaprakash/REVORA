@@ -1,0 +1,87 @@
+{
+    "total_transactions": 5000,
+    "total_at_risk_transactions": 2026,
+    "total_revenue_at_risk": 51042090.0,
+    "total_recovery_attempts": 1522,
+    "successful_recoveries": 654,
+    "failed_recoveries": 868,
+    "total_amount_recovered": 16512404.6,
+    "remaining_revenue_at_risk": 34529685.4,
+    "recovery_rate": 0.4297,
+    "revenue_recovery_rate": 0.3235,
+    "human_approval_count": 504,
+    "stopped_count": 0,
+    "policy_override_count": 0,
+    "expected_recovery_from_decision_engine": 23513519.2,
+    "actual_simulated_recovery": 16512404.6,
+    "recovery_calibration_gap": 7001114.6,
+    "action_performance": {
+        "PAYMENT_REMINDER": {
+            "attempts": 1016,
+            "successes": 349,
+            "recovered": 9293291.0
+        },
+        "RECEIVABLES_ESCALATION": {
+            "attempts": 192,
+            "successes": 93,
+            "recovered": 1846173.6000000006
+        },
+        "SMART_RETRY": {
+            "attempts": 256,
+            "successes": 186,
+            "recovered": 4685427.0
+        },
+        "MANDATE_RETRY": {
+            "attempts": 58,
+            "successes": 26,
+            "recovered": 687513.0
+        }
+    },
+    "root_cause_performance": {
+        "PAYMENT_METHOD_FAILURE": {
+            "attempts": 131,
+            "successes": 59,
+            "recovered": 1512643.0
+        },
+        "CHECKOUT_ABANDONMENT": {
+            "attempts": 495,
+            "successes": 160,
+            "recovered": 4371380.0
+        },
+        "OVERDUE_RECEIVABLE": {
+            "attempts": 261,
+            "successes": 124,
+            "recovered": 2681792.5999999987
+        },
+        "OTHER_REVENUE_RISK": {
+            "attempts": 75,
+            "successes": 12,
+            "recovered": 371864.0
+        },
+        "AUTHENTICATION_FAILURE": {
+            "attempts": 136,
+            "successes": 54,
+            "recovered": 1509693.0
+        },
+        "TEMPORARY_PAYMENT_FAILURE": {
+            "attempts": 132,
+            "successes": 106,
+            "recovered": 2514560.0
+        },
+        "INSUFFICIENT_FUNDS": {
+            "attempts": 110,
+            "successes": 33,
+            "recovered": 692092.0
+        },
+        "PAYMENT_INFRASTRUCTURE_FAILURE": {
+            "attempts": 124,
+            "successes": 80,
+            "recovered": 2170867.0
+        },
+        "SUBSCRIPTION_PAYMENT_FAILURE": {
+            "attempts": 58,
+            "successes": 26,
+            "recovered": 687513.0
+        }
+    }
+}
